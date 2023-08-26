@@ -32,24 +32,18 @@
 
     <repositories>
         <repository>
-            <id>pa-snapshots</id>
-            <url>https://repo.extension.ws/content/repositories/snapshots</url>
-        </repository>
-        <repository>
-            <id>pa-releases</id>
-            <url>https://repo.extension.ws/content/repositories/releases</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/Indicardo/ProjectAres</url>
         </repository>
     </repositories>
 
     <distributionManagement>
         <repository>
-            <id>pa-deployment</id>
-            <url>https://repo.extension.ws/content/repositories/releases</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/Indicardo/ProjectAres</url>
         </repository>
-        <snapshotRepository>
-            <id>pa-deployment</id>
-            <url>https://repo.extension.ws/content/repositories/snapshots</url>
-        </snapshotRepository>
     </distributionManagement>
 
     <dependencies>
@@ -76,7 +70,7 @@
         </dependency>
         <dependency>
             <groupId>com.github.rmsy.Channels</groupId>
-            <artifactId>Channels</artifactId>
+            <artifactId>channels</artifactId>
             <version>1.9-SNAPSHOT</version>
         </dependency>
         <dependency>
